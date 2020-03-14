@@ -1,7 +1,9 @@
-# VoiceRecognition application.
+# Voice Recognition application.
 
 ###About:
-This is a simple (1st) voice registration application. The intention is just to experiment with the speech ability to gain a better understanding.
+This is a simple (1st) voice registration application.
+
+The intention is just to experiment with the speech ability to gain a better understanding.
 
 ###Features:
 * Speak recognition.
@@ -20,15 +22,15 @@ recognition.onstart = () => {
     ...
 };
 
-//after the speech rec has done.
+//After the speech rec has done.
 recognition.onresult = (event) => {
     ...
-    //gets the spoken text.
+    //Gets the spoken text.
     const transcript = event.results[current][0].transcript;
     ...
 };
 
-//add the listener to the button so that when pressed the micophone is activated.
+//Add the listener to the button so that when pressed the micophone is activated.
 btn.addEventListener('click', () => {
     recognition.start();
 });
