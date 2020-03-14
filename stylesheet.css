@@ -1,0 +1,25 @@
+body{
+    background-color: cornflowerblue;
+}
+
+header{
+    color: whitesmoke;
+    text-indent: 2em;
+}
+
+.talk{
+    width: 100%;
+    height: 100px;
+    font-size: large;
+}
+
+#messageLog{
+    overflow-y: auto;
+    height: 300px;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.content{
+    color: whitesmoke;
+}
