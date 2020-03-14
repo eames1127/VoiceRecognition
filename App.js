@@ -1,36 +1,30 @@
 const btn = document.querySelector(".talk");
 const content = document.querySelector(".content");
-
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
 
-
-//
+// Greeting array.
 const greetings = [
     "I'm good thank you.",
     "Doing good",
     "Go away!"
 ];
 
-recognition.onstart = function(){
+recognition.onstart = () => {
     console.log("Voice is activated, please speak into the microphone.");
 };
 
-
-recognition.onresult = function(event){
+recognition.onresult = (event) => {
     const current = event.resultIndex;
-
     const transcript = event.results[current][0].transcript;
 
     readOutLout(transcript);
 };
 
-
 //add the listener to the button.
 btn.addEventListener('click', () => {
     recognition.start();
 });
-
 
 function readOutLout(message)
 {
