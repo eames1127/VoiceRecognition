@@ -1,18 +1,17 @@
 # Voice Recognition application.
 
-###About:
+### About:
 This is a simple (1st) voice registration application.
+The intention is just to experiment with the speech ability to gain a better understanding of how it works. The code can probably be neatened and improved it was more of a quick throw together.
 
-The intention is just to experiment with the speech ability to gain a better understanding.
-
-###Features:
+### Features:
 * Speak recognition.
 * Spoken reply.
-* Chat logging.
+* Basic Chat log/history.
 * Basic/very simple configured replies.
 
 
-###Speech rec code:
+### Speech rec code:
 ```javascript {cmd="node"}
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 const recognition = new SpeechRecognition();
